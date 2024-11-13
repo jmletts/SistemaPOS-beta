@@ -8,7 +8,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.Timer;
-
+import dashboard.dashboard1;
 /**
  *
  * @author macbook
@@ -64,11 +64,11 @@ public class inicioSesion extends javax.swing.JFrame {
         panelRound6 = new InicioSesion1.PanelRound();
         getDniIni = new javax.swing.JTextField();
         panelRound7 = new InicioSesion1.PanelRound();
-        jLabel9 = new javax.swing.JLabel();
+        btnINi = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         panelRound8 = new InicioSesion1.PanelRound();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        passIni = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -290,18 +290,21 @@ public class inicioSesion extends javax.swing.JFrame {
         panelRound7.setRoundTopLeft(12);
         panelRound7.setRoundTopRight(12);
 
-        jLabel9.setFont(new java.awt.Font("Red Hat Display", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("INICIO SESION");
-        jLabel9.setToolTipText("");
-        jLabel9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnINi.setFont(new java.awt.Font("Red Hat Display", 1, 14)); // NOI18N
+        btnINi.setForeground(new java.awt.Color(255, 255, 255));
+        btnINi.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnINi.setText("INICIO SESION");
+        btnINi.setToolTipText("");
+        btnINi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnINi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnINiMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel9MouseEntered(evt);
+                btnINiMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel9MouseExited(evt);
+                btnINiMouseExited(evt);
             }
         });
 
@@ -310,12 +313,12 @@ public class inicioSesion extends javax.swing.JFrame {
         panelRound7Layout.setHorizontalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound7Layout.createSequentialGroup()
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnINi, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         panelRound7Layout.setVerticalGroup(
             panelRound7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+            .addComponent(btnINi, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
         panelRound5.add(panelRound7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 150, 30));
@@ -340,7 +343,7 @@ public class inicioSesion extends javax.swing.JFrame {
         panelRound8.setRoundTopLeft(12);
         panelRound8.setRoundTopRight(12);
 
-        jPasswordField1.setBorder(null);
+        passIni.setBorder(null);
 
         javax.swing.GroupLayout panelRound8Layout = new javax.swing.GroupLayout(panelRound8);
         panelRound8.setLayout(panelRound8Layout);
@@ -348,12 +351,12 @@ public class inicioSesion extends javax.swing.JFrame {
             panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelRound8Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
+                .addComponent(passIni, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
                 .addContainerGap())
         );
         panelRound8Layout.setVerticalGroup(
             panelRound8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+            .addComponent(passIni, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
         panelRound5.add(panelRound8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
@@ -462,14 +465,14 @@ public class inicioSesion extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseEntered
+    private void btnINiMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnINiMouseEntered
         // TODO add your handling code here:
         panelRound7.setBackground(Color.gray);
-    }//GEN-LAST:event_jLabel9MouseEntered
+    }//GEN-LAST:event_btnINiMouseEntered
 
-    private void jLabel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseExited
+    private void btnINiMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnINiMouseExited
         panelRound7.setBackground(new Color(170, 0, 0));
-    }//GEN-LAST:event_jLabel9MouseExited
+    }//GEN-LAST:event_btnINiMouseExited
 
     private void jLabel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseEntered
         panelRound4.setBackground(Color.gray);
@@ -528,6 +531,26 @@ public class inicioSesion extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_getDniIniFocusLost
 
+    private void btnINiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnINiMouseClicked
+        // TODO add your handling code here:
+        dashboard1 ventana2 = new dashboard1();
+        String pin1 = "1234";
+        String user = "23978040";
+        
+        
+        if ( passIni.getText().equals(pin1) && (getDniIni.getText().equals(user))) {
+           ventana2.setVisible(true);
+           
+        } else {
+            paneMess.setBackground(new Color(170, 0, 0));
+            showmes2.setText("LOS DATOS INGRESADOS SON INCORRECTOS");
+        }
+        
+        getPin.setText("");
+        getDniReg.setText("DNI");
+        
+    }//GEN-LAST:event_btnINiMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -564,6 +587,7 @@ public class inicioSesion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel btnINi;
     private javax.swing.JTextField getDniIni;
     private javax.swing.JTextField getDniReg;
     private javax.swing.JPasswordField getPin;
@@ -581,10 +605,8 @@ public class inicioSesion extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPanel paneMess;
     private InicioSesion1.PanelRound panelRound1;
     private InicioSesion1.PanelRound panelRound2;
@@ -594,6 +616,7 @@ public class inicioSesion extends javax.swing.JFrame {
     private InicioSesion1.PanelRound panelRound6;
     private InicioSesion1.PanelRound panelRound7;
     private InicioSesion1.PanelRound panelRound8;
+    private javax.swing.JPasswordField passIni;
     private javax.swing.JLabel showmes2;
     // End of variables declaration//GEN-END:variables
 }

@@ -17,6 +17,7 @@ public class dashboard1 extends javax.swing.JFrame {
      */
     public dashboard1() {
         initComponents();
+        setLocationRelativeTo(null);
     }
     
    
@@ -30,7 +31,7 @@ public class dashboard1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        panelRound1 = new dashboard.PanelRound();
+        header = new dashboard.PanelRound();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btn = new dashboard.PanelRound();
@@ -45,35 +46,62 @@ public class dashboard1 extends javax.swing.JFrame {
         btnSopor = new javax.swing.JLabel();
         btn7 = new dashboard.PanelRound();
         btnStart = new javax.swing.JLabel();
-        btn9 = new dashboard.PanelRound();
-        jLabel12 = new javax.swing.JLabel();
         bg1 = new dashboard.PanelRound();
         showDisp = new dashboard.PanelRound();
         txtDisp = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        compDash = new dashboard.PanelRound();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        panelRound3 = new dashboard.PanelRound();
+        jLabel7 = new javax.swing.JLabel();
+        compDash1 = new dashboard.PanelRound();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        panelRound4 = new dashboard.PanelRound();
+        jLabel10 = new javax.swing.JLabel();
+        compDash2 = new dashboard.PanelRound();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        panelRound5 = new dashboard.PanelRound();
+        jLabel14 = new javax.swing.JLabel();
+        compDash3 = new dashboard.PanelRound();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        panelRound6 = new dashboard.PanelRound();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        panelRound1 = new dashboard.PanelRound();
+        txts12 = new javax.swing.JLabel();
+        txts15 = new javax.swing.JLabel();
+        txts16 = new javax.swing.JLabel();
+        txts13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(0, 0, 1920, 1080));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        panelRound1.setBackground(new java.awt.Color(245, 245, 245));
-        panelRound1.setRoundBottomRight(40);
-        panelRound1.setRoundTopRight(40);
+        header.setBackground(new java.awt.Color(245, 245, 245));
+        header.setRoundBottomRight(60);
+        header.setRoundTopRight(60);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 22)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Red Hat Display", 1, 17)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel1.setText("Gerente Belen");
+        jLabel1.setText("Administrador");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 26)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Red Hat Display", 1, 20)); // NOI18N
         jLabel2.setText("KARINA RUEDA");
 
         btn.setBackground(new java.awt.Color(230, 230, 230));
-        btn.setRoundBottomLeft(20);
-        btn.setRoundBottomRight(20);
-        btn.setRoundTopLeft(20);
-        btn.setRoundTopRight(20);
+        btn.setRoundBottomLeft(30);
+        btn.setRoundBottomRight(30);
+        btn.setRoundTopLeft(30);
+        btn.setRoundTopRight(30);
 
-        btnDash.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        btnDash.setFont(new java.awt.Font("Red Hat Display", 1, 17)); // NOI18N
         btnDash.setForeground(new java.awt.Color(102, 102, 102));
         btnDash.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnDash.setText("DASHBOARD");
@@ -91,7 +119,7 @@ public class dashboard1 extends javax.swing.JFrame {
         btn.setLayout(btnLayout);
         btnLayout.setHorizontalGroup(
             btnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btnDash, javax.swing.GroupLayout.DEFAULT_SIZE, 232, Short.MAX_VALUE)
+            .addComponent(btnDash, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         btnLayout.setVerticalGroup(
             btnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,12 +127,12 @@ public class dashboard1 extends javax.swing.JFrame {
         );
 
         btn2.setBackground(new java.awt.Color(230, 230, 230));
-        btn2.setRoundBottomLeft(20);
-        btn2.setRoundBottomRight(20);
-        btn2.setRoundTopLeft(20);
-        btn2.setRoundTopRight(20);
+        btn2.setRoundBottomLeft(30);
+        btn2.setRoundBottomRight(30);
+        btn2.setRoundTopLeft(30);
+        btn2.setRoundTopRight(30);
 
-        btnRepor.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        btnRepor.setFont(new java.awt.Font("Red Hat Display", 1, 17)); // NOI18N
         btnRepor.setForeground(new java.awt.Color(102, 102, 102));
         btnRepor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnRepor.setText("REPORTE");
@@ -127,7 +155,7 @@ public class dashboard1 extends javax.swing.JFrame {
             btn2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(btn2Layout.createSequentialGroup()
                 .addComponent(btnRepor, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 1, Short.MAX_VALUE))
         );
         btn2Layout.setVerticalGroup(
             btn2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -135,12 +163,12 @@ public class dashboard1 extends javax.swing.JFrame {
         );
 
         btn3.setBackground(new java.awt.Color(230, 230, 230));
-        btn3.setRoundBottomLeft(20);
-        btn3.setRoundBottomRight(20);
-        btn3.setRoundTopLeft(20);
-        btn3.setRoundTopRight(20);
+        btn3.setRoundBottomLeft(30);
+        btn3.setRoundBottomRight(30);
+        btn3.setRoundTopLeft(30);
+        btn3.setRoundTopRight(30);
 
-        btnTrans.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        btnTrans.setFont(new java.awt.Font("Red Hat Display", 1, 17)); // NOI18N
         btnTrans.setForeground(new java.awt.Color(102, 102, 102));
         btnTrans.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnTrans.setText("TRANSACCIONES");
@@ -169,12 +197,12 @@ public class dashboard1 extends javax.swing.JFrame {
         );
 
         btn4.setBackground(new java.awt.Color(230, 230, 230));
-        btn4.setRoundBottomLeft(20);
-        btn4.setRoundBottomRight(20);
-        btn4.setRoundTopLeft(20);
-        btn4.setRoundTopRight(20);
+        btn4.setRoundBottomLeft(30);
+        btn4.setRoundBottomRight(30);
+        btn4.setRoundTopLeft(30);
+        btn4.setRoundTopRight(30);
 
-        btnAjust.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        btnAjust.setFont(new java.awt.Font("Red Hat Display", 1, 17)); // NOI18N
         btnAjust.setForeground(new java.awt.Color(102, 102, 102));
         btnAjust.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnAjust.setText("AJUSTES");
@@ -203,12 +231,12 @@ public class dashboard1 extends javax.swing.JFrame {
         );
 
         btn5.setBackground(new java.awt.Color(230, 230, 230));
-        btn5.setRoundBottomLeft(20);
-        btn5.setRoundBottomRight(20);
-        btn5.setRoundTopLeft(20);
-        btn5.setRoundTopRight(20);
+        btn5.setRoundBottomLeft(30);
+        btn5.setRoundBottomRight(30);
+        btn5.setRoundTopLeft(30);
+        btn5.setRoundTopRight(30);
 
-        btnSopor.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
+        btnSopor.setFont(new java.awt.Font("Red Hat Display", 1, 17)); // NOI18N
         btnSopor.setForeground(new java.awt.Color(102, 102, 102));
         btnSopor.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnSopor.setText("SOPORTE");
@@ -237,13 +265,13 @@ public class dashboard1 extends javax.swing.JFrame {
         );
 
         btn7.setBackground(new java.awt.Color(170, 0, 0));
-        btn7.setRoundBottomLeft(20);
-        btn7.setRoundBottomRight(20);
-        btn7.setRoundTopLeft(20);
-        btn7.setRoundTopRight(20);
+        btn7.setRoundBottomLeft(30);
+        btn7.setRoundBottomRight(30);
+        btn7.setRoundTopLeft(30);
+        btn7.setRoundTopRight(30);
 
         btnStart.setBackground(new java.awt.Color(170, 0, 0));
-        btnStart.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        btnStart.setFont(new java.awt.Font("Red Hat Display", 1, 17)); // NOI18N
         btnStart.setForeground(new java.awt.Color(255, 255, 255));
         btnStart.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         btnStart.setText("INICIAR OPERACIONES");
@@ -271,40 +299,14 @@ public class dashboard1 extends javax.swing.JFrame {
             .addComponent(btnStart, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
         );
 
-        btn9.setBackground(new java.awt.Color(51, 51, 51));
-        btn9.setRoundBottomLeft(20);
-        btn9.setRoundBottomRight(20);
-        btn9.setRoundTopLeft(20);
-        btn9.setRoundTopRight(20);
-
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 17)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("CERRAR SESION");
-        jLabel12.setToolTipText("");
-        jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        javax.swing.GroupLayout btn9Layout = new javax.swing.GroupLayout(btn9);
-        btn9.setLayout(btn9Layout);
-        btn9Layout.setHorizontalGroup(
-            btn9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btn9Layout.createSequentialGroup()
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1, Short.MAX_VALUE))
-        );
-        btn9Layout.setVerticalGroup(
-            btn9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
-        );
-
         bg1.setBackground(new java.awt.Color(255, 255, 255));
-        bg1.setRoundBottomLeft(40);
-        bg1.setRoundBottomRight(40);
-        bg1.setRoundTopLeft(40);
-        bg1.setRoundTopRight(40);
+        bg1.setRoundBottomLeft(30);
+        bg1.setRoundBottomRight(30);
+        bg1.setRoundTopLeft(30);
+        bg1.setRoundTopRight(30);
         bg1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        showDisp.setBackground(new java.awt.Color(0, 204, 51));
+        showDisp.setBackground(new java.awt.Color(102, 204, 0));
         showDisp.setRoundBottomLeft(20);
         showDisp.setRoundBottomRight(20);
         showDisp.setRoundTopLeft(20);
@@ -323,48 +325,64 @@ public class dashboard1 extends javax.swing.JFrame {
 
         bg1.add(showDisp, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        txtDisp.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        txtDisp.setText("Activo");
+        txtDisp.setFont(new java.awt.Font("Red Hat Display", 1, 18)); // NOI18N
+        txtDisp.setForeground(new java.awt.Color(51, 51, 51));
+        txtDisp.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txtDisp.setText("Acceso Total   ");
+        txtDisp.setToolTipText("");
+        txtDisp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txtDisp.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                txtDispMouseEntered(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                txtDispMousePressed(evt);
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtDispMouseClicked(evt);
             }
         });
-        bg1.add(txtDisp, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 0, -1, 40));
+        bg1.add(txtDisp, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 210, 50));
 
-        javax.swing.GroupLayout panelRound1Layout = new javax.swing.GroupLayout(panelRound1);
-        panelRound1.setLayout(panelRound1Layout);
-        panelRound1Layout.setHorizontalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bg1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+        jLabel12.setFont(new java.awt.Font("Red Hat Display", 1, 17)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel12.setText("Cerrar Sesion");
+        jLabel12.setToolTipText("");
+        jLabel12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
+        header.setLayout(headerLayout);
+        headerLayout.setHorizontalGroup(
+            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, headerLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38))
+            .addGroup(headerLayout.createSequentialGroup()
+                .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(headerLayout.createSequentialGroup()
+                        .addGap(15, 15, 15)
+                        .addGroup(headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btn2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(bg1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(headerLayout.createSequentialGroup()
+                        .addGap(63, 63, 63)
+                        .addComponent(jLabel1))
+                    .addGroup(headerLayout.createSequentialGroup()
+                        .addGap(59, 59, 59)
+                        .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
-        panelRound1Layout.setVerticalGroup(
-            panelRound1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRound1Layout.createSequentialGroup()
+        headerLayout.setVerticalGroup(
+            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(headerLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(bg1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(72, 72, 72)
+                .addGap(18, 18, 18)
+                .addComponent(bg1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(64, 64, 64)
                 .addComponent(btn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -376,22 +394,334 @@ public class dashboard1 extends javax.swing.JFrame {
                 .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17))
         );
+
+        jLabel3.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel3.setFont(new java.awt.Font("Red Hat Display", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel3.setText("Bienvenida Karina.");
+
+        jLabel4.setFont(new java.awt.Font("Red Hat Display", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 102));
+        jLabel4.setText("INICIO");
+
+        compDash.setBackground(new java.awt.Color(245, 245, 245));
+        compDash.setRoundBottomLeft(60);
+        compDash.setRoundBottomRight(60);
+        compDash.setRoundTopLeft(60);
+        compDash.setRoundTopRight(60);
+
+        jLabel5.setFont(new java.awt.Font("Red Hat Display", 1, 18)); // NOI18N
+        jLabel5.setText("RETIRA TUS GANANCIAS");
+
+        jLabel6.setFont(new java.awt.Font("Red Hat Display", 0, 14)); // NOI18N
+        jLabel6.setText("<html>Seras redirigido a la pagina web segura <br >de mercado pago, para realizar la operacion</html>");
+
+        panelRound3.setBackground(new java.awt.Color(170, 0, 0));
+        panelRound3.setRoundBottomLeft(30);
+        panelRound3.setRoundBottomRight(30);
+        panelRound3.setRoundTopLeft(30);
+        panelRound3.setRoundTopRight(30);
+
+        jLabel7.setFont(new java.awt.Font("Red Hat Display", 1, 16)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Continuar");
+
+        javax.swing.GroupLayout panelRound3Layout = new javax.swing.GroupLayout(panelRound3);
+        panelRound3.setLayout(panelRound3Layout);
+        panelRound3Layout.setHorizontalGroup(
+            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
+        );
+        panelRound3Layout.setVerticalGroup(
+            panelRound3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout compDashLayout = new javax.swing.GroupLayout(compDash);
+        compDash.setLayout(compDashLayout);
+        compDashLayout.setHorizontalGroup(
+            compDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(compDashLayout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(compDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5)
+                    .addComponent(panelRound3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        compDashLayout.setVerticalGroup(
+            compDashLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, compDashLayout.createSequentialGroup()
+                .addContainerGap(67, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panelRound3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+        );
+
+        compDash1.setBackground(new java.awt.Color(245, 245, 245));
+        compDash1.setRoundBottomLeft(60);
+        compDash1.setRoundBottomRight(60);
+        compDash1.setRoundTopLeft(60);
+        compDash1.setRoundTopRight(60);
+
+        jLabel8.setFont(new java.awt.Font("Red Hat Display", 1, 18)); // NOI18N
+        jLabel8.setText("FACTURACION");
+
+        jLabel9.setFont(new java.awt.Font("Red Hat Display", 0, 14)); // NOI18N
+        jLabel9.setText("<html>Seras redirigido a la pagina web segura <br >de mercado pago, para realizar la operacion</html>");
+
+        panelRound4.setBackground(new java.awt.Color(170, 0, 0));
+        panelRound4.setRoundBottomLeft(30);
+        panelRound4.setRoundBottomRight(30);
+        panelRound4.setRoundTopLeft(30);
+        panelRound4.setRoundTopRight(30);
+
+        jLabel10.setFont(new java.awt.Font("Red Hat Display", 1, 16)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("Continuar");
+
+        javax.swing.GroupLayout panelRound4Layout = new javax.swing.GroupLayout(panelRound4);
+        panelRound4.setLayout(panelRound4Layout);
+        panelRound4Layout.setHorizontalGroup(
+            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
+        );
+        panelRound4Layout.setVerticalGroup(
+            panelRound4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout compDash1Layout = new javax.swing.GroupLayout(compDash1);
+        compDash1.setLayout(compDash1Layout);
+        compDash1Layout.setHorizontalGroup(
+            compDash1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(compDash1Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(compDash1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8)
+                    .addComponent(panelRound4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+        compDash1Layout.setVerticalGroup(
+            compDash1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, compDash1Layout.createSequentialGroup()
+                .addContainerGap(67, Short.MAX_VALUE)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panelRound4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+        );
+
+        compDash2.setBackground(new java.awt.Color(245, 245, 245));
+        compDash2.setRoundBottomLeft(60);
+        compDash2.setRoundBottomRight(60);
+        compDash2.setRoundTopLeft(60);
+        compDash2.setRoundTopRight(60);
+
+        jLabel11.setFont(new java.awt.Font("Red Hat Display", 1, 18)); // NOI18N
+        jLabel11.setText("CUENTA BANCARIA");
+
+        jLabel13.setFont(new java.awt.Font("Red Hat Display", 0, 14)); // NOI18N
+        jLabel13.setText("<html>Seras redirigido a la pagina web segura <br >de mercado pago, para realizar la operacion</html>");
+
+        panelRound5.setBackground(new java.awt.Color(170, 0, 0));
+        panelRound5.setRoundBottomLeft(30);
+        panelRound5.setRoundBottomRight(30);
+        panelRound5.setRoundTopLeft(30);
+        panelRound5.setRoundTopRight(30);
+
+        jLabel14.setFont(new java.awt.Font("Red Hat Display", 1, 16)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setText("Continuar");
+
+        javax.swing.GroupLayout panelRound5Layout = new javax.swing.GroupLayout(panelRound5);
+        panelRound5.setLayout(panelRound5Layout);
+        panelRound5Layout.setHorizontalGroup(
+            panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
+        );
+        panelRound5Layout.setVerticalGroup(
+            panelRound5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout compDash2Layout = new javax.swing.GroupLayout(compDash2);
+        compDash2.setLayout(compDash2Layout);
+        compDash2Layout.setHorizontalGroup(
+            compDash2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(compDash2Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(compDash2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11)
+                    .addComponent(panelRound5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+        compDash2Layout.setVerticalGroup(
+            compDash2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, compDash2Layout.createSequentialGroup()
+                .addContainerGap(67, Short.MAX_VALUE)
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panelRound5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+        );
+
+        compDash3.setBackground(new java.awt.Color(245, 245, 245));
+        compDash3.setRoundBottomLeft(60);
+        compDash3.setRoundBottomRight(60);
+        compDash3.setRoundTopLeft(60);
+        compDash3.setRoundTopRight(60);
+
+        jLabel15.setFont(new java.awt.Font("Red Hat Display", 1, 18)); // NOI18N
+        jLabel15.setText("REPORTE DEL DIA");
+
+        jLabel16.setFont(new java.awt.Font("Red Hat Display", 0, 14)); // NOI18N
+        jLabel16.setText("<html>Seras redirigido a la pagina web segura <br >de mercado pago, para realizar la operacion</html>");
+
+        panelRound6.setBackground(new java.awt.Color(170, 0, 0));
+        panelRound6.setRoundBottomLeft(30);
+        panelRound6.setRoundBottomRight(30);
+        panelRound6.setRoundTopLeft(30);
+        panelRound6.setRoundTopRight(30);
+
+        jLabel17.setFont(new java.awt.Font("Red Hat Display", 1, 16)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel17.setText("Continuar");
+
+        javax.swing.GroupLayout panelRound6Layout = new javax.swing.GroupLayout(panelRound6);
+        panelRound6.setLayout(panelRound6Layout);
+        panelRound6Layout.setHorizontalGroup(
+            panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
+        );
+        panelRound6Layout.setVerticalGroup(
+            panelRound6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout compDash3Layout = new javax.swing.GroupLayout(compDash3);
+        compDash3.setLayout(compDash3Layout);
+        compDash3Layout.setHorizontalGroup(
+            compDash3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(compDash3Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(compDash3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 356, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15)
+                    .addComponent(panelRound6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(33, Short.MAX_VALUE))
+        );
+        compDash3Layout.setVerticalGroup(
+            compDash3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, compDash3Layout.createSequentialGroup()
+                .addContainerGap(67, Short.MAX_VALUE)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(panelRound6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
+        );
+
+        jLabel18.setFont(new java.awt.Font("Red Hat Display", 1, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(0, 102, 255));
+        jLabel18.setText("Novedades de la Version 1.0 beta");
+
+        panelRound1.setBackground(new java.awt.Color(245, 245, 245));
+        panelRound1.setRoundBottomLeft(30);
+        panelRound1.setRoundBottomRight(30);
+        panelRound1.setRoundTopLeft(30);
+        panelRound1.setRoundTopRight(30);
+        panelRound1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        txts12.setBackground(new java.awt.Color(102, 102, 102));
+        txts12.setFont(new java.awt.Font("Red Hat Display", 1, 14)); // NOI18N
+        txts12.setForeground(new java.awt.Color(51, 51, 51));
+        txts12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txts12.setText("Nombre:  Caja Rapida Belen");
+        panelRound1.add(txts12, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, 210, 30));
+
+        txts15.setBackground(new java.awt.Color(102, 102, 102));
+        txts15.setFont(new java.awt.Font("Red Hat Display", 1, 14)); // NOI18N
+        txts15.setForeground(new java.awt.Color(51, 51, 51));
+        txts15.setText("Mercado Pago: No configurado");
+        panelRound1.add(txts15, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 10, 220, 30));
+
+        txts16.setBackground(new java.awt.Color(102, 102, 102));
+        txts16.setFont(new java.awt.Font("Red Hat Display", 1, 14)); // NOI18N
+        txts16.setForeground(new java.awt.Color(51, 51, 51));
+        txts16.setText("DNI: 23456532");
+        panelRound1.add(txts16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 160, 30));
+
+        txts13.setBackground(new java.awt.Color(102, 102, 102));
+        txts13.setFont(new java.awt.Font("Red Hat Display", 1, 14)); // NOI18N
+        txts13.setForeground(new java.awt.Color(51, 51, 51));
+        txts13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        txts13.setText("Acceso:  Total");
+        panelRound1.add(txts13, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 170, 30));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1113, Short.MAX_VALUE))
+                .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel4)
+                            .addComponent(compDash, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(compDash2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(compDash3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(compDash1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, 840, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 69, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelRound1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(header, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel18)
+                .addGap(18, 18, 18)
+                .addComponent(panelRound1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(compDash, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(21, 21, 21)
+                        .addComponent(compDash2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(237, 237, 237)
+                        .addComponent(compDash1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(compDash3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -402,7 +732,7 @@ public class dashboard1 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -487,16 +817,11 @@ public class dashboard1 extends javax.swing.JFrame {
         btnStart.setForeground(Color.white);
     }//GEN-LAST:event_btnStartMouseExited
 
-    private void txtDispMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtDispMouseEntered
+    private void txtDispMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtDispMouseClicked
         // TODO add your handling code here:
-        txtDisp.setText("Editar");
-        txtDisp.setForeground(Color.gray);
-        showDisp.setBackground(Color.white);
-    }//GEN-LAST:event_txtDispMouseEntered
-
-    private void txtDispMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtDispMousePressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDispMousePressed
+        editDisp venClose = new editDisp();
+        venClose.setVisible(true);
+    }//GEN-LAST:event_txtDispMouseClicked
 
     /**
      * @param args the command line arguments
@@ -536,30 +861,51 @@ public class dashboard1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private dashboard.PanelRound bg1;
     private dashboard.PanelRound btn;
-    private dashboard.PanelRound btn1;
     private dashboard.PanelRound btn2;
     private dashboard.PanelRound btn3;
     private dashboard.PanelRound btn4;
     private dashboard.PanelRound btn5;
-    private dashboard.PanelRound btn6;
     private dashboard.PanelRound btn7;
-    private dashboard.PanelRound btn8;
-    private dashboard.PanelRound btn9;
     private javax.swing.JLabel btnAjust;
     private javax.swing.JLabel btnDash;
     private javax.swing.JLabel btnRepor;
     private javax.swing.JLabel btnSopor;
     private javax.swing.JLabel btnStart;
     private javax.swing.JLabel btnTrans;
+    private dashboard.PanelRound compDash;
+    private dashboard.PanelRound compDash1;
+    private dashboard.PanelRound compDash2;
+    private dashboard.PanelRound compDash3;
+    private dashboard.PanelRound header;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private dashboard.PanelRound panelRound1;
+    private dashboard.PanelRound panelRound3;
+    private dashboard.PanelRound panelRound4;
+    private dashboard.PanelRound panelRound5;
+    private dashboard.PanelRound panelRound6;
     private dashboard.PanelRound showDisp;
-    private javax.swing.JLabel textbtn1;
     private javax.swing.JLabel txtDisp;
+    private javax.swing.JLabel txts12;
+    private javax.swing.JLabel txts13;
+    private javax.swing.JLabel txts15;
+    private javax.swing.JLabel txts16;
     // End of variables declaration//GEN-END:variables
 }
