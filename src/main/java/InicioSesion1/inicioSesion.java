@@ -9,6 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.Timer;
 import dashboard.dashboard1;
+import java.awt.Frame;
 /**
  *
  * @author macbook
@@ -306,6 +307,9 @@ public class inicioSesion extends javax.swing.JFrame {
             public void mouseExited(java.awt.event.MouseEvent evt) {
                 btnINiMouseExited(evt);
             }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnINiMousePressed(evt);
+            }
         });
 
         javax.swing.GroupLayout panelRound7Layout = new javax.swing.GroupLayout(panelRound7);
@@ -533,13 +537,27 @@ public class inicioSesion extends javax.swing.JFrame {
 
     private void btnINiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnINiMouseClicked
         // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_btnINiMouseClicked
+
+    private void btnINiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnINiMousePressed
+        // TODO add your handling code here:
         dashboard1 ventana2 = new dashboard1();
         String pin1 = "1234";
         String user = "23978040";
         
         
+        
         if ( passIni.getText().equals(pin1) && (getDniIni.getText().equals(user))) {
+             
+            
+          for (Frame frame : Frame.getFrames()) {
+            frame.dispose();
+          }
+          
            ventana2.setVisible(true);
+           
            
         } else {
             paneMess.setBackground(new Color(170, 0, 0));
@@ -549,7 +567,7 @@ public class inicioSesion extends javax.swing.JFrame {
         getPin.setText("");
         getDniReg.setText("DNI");
         
-    }//GEN-LAST:event_btnINiMouseClicked
+    }//GEN-LAST:event_btnINiMousePressed
 
     /**
      * @param args the command line arguments
